@@ -14,3 +14,20 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+
+
+#ignore database configuration
+/config/database.yml
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp
+
+Ignore public files.
+/public
+
+#emacs temporary files
+*~
+.#*
+\#*#
+
