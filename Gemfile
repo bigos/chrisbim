@@ -36,3 +36,9 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+### my gems
+gem 'will_paginate'
+gem 'paperclip'
+gem 'haml'
+###
