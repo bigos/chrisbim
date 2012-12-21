@@ -1,7 +1,7 @@
 Chrisbim::Application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   resources :pages
-
 
   match 'login' => 'user_sessions#create'
   match 'logout' => 'user_sessions#destroy'
