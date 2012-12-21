@@ -1,5 +1,8 @@
 Chrisbim::Application.routes.draw do
 
+  resources :pages
+
+
   match 'login' => 'user_sessions#create'
   match 'logout' => 'user_sessions#destroy'
   resource :user_session
@@ -53,7 +56,7 @@ Chrisbim::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
