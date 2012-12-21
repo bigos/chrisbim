@@ -9,11 +9,14 @@
     #wrapper
       #page
         #logo
-          = image_tag 'logo.gif'
+          = link_to image_tag('logo.gif'), root_url
         #navbar
+          = link_to 'home', pages_url
+          = link_to 'new', new_page_url
         #content
           = yield
         #footer
+          &copy; Chris Beard Photography 2011 
     #dump
       %p= current_user.inspect      
       %p= current_user_session.inspect
