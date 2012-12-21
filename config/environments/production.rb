@@ -15,7 +15,7 @@ Chrisbim::Application.configure do
   config.assets.compress = true
 
   #needed for ckeditor
-  config.assets.precompile += Ckeditor.assets
+  #config.assets.precompile += Ckeditor.assets
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false

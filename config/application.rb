@@ -58,5 +58,8 @@ module Chrisbim
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #autoload ckeditor models folder
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
 end
