@@ -8,6 +8,7 @@
   %body
     = yield
     #footer
+    #dump
       %p= current_user.inspect      
       %p= current_user_session.inspect
       - if current_user
