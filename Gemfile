@@ -42,4 +42,5 @@ gem 'will_paginate'
 gem 'paperclip'
 gem 'haml'
 gem "authlogic", "~> 3.2.0"
+gem "ckeditor"	   
 ###
