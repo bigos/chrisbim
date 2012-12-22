@@ -43,4 +43,7 @@ gem 'paperclip'
 gem 'haml'
 gem "authlogic", "~> 3.2.0"
 gem "ckeditor"	   
-###
+
+group :test do
+  gem 'spinach-rails'	#BDD Rspec extention
+end
