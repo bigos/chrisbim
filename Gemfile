@@ -45,3 +45,6 @@ gem 'hpricot'     #needed for haml
 gem 'ruby_parser' #needed for haml
 gem "authlogic", "~> 3.2.0"
 gem "ckeditor"	   
+
+gem "factory_girl_rails", "~> 4.0"
+gem "shoulda"
