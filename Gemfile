@@ -40,7 +40,7 @@ gem 'jquery-rails'
 ### my gems
 gem 'will_paginate'
 gem 'paperclip'
-gem 'haml'
+gem 'haml-rails'
 gem 'hpricot'     #needed for haml
 gem 'ruby_parser' #needed for haml
 gem "authlogic", "~> 3.2.0"
