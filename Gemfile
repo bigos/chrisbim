@@ -54,5 +54,5 @@ end
 
 group :test do
   gem 'spinach'
-  # gem 'rspec'
+  gem 'rspec'
 end
