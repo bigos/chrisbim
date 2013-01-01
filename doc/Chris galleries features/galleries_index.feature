@@ -4,7 +4,7 @@ Feature: See available Galleries
   I want to click on Galleries link on the navbar
 
   Scenario: visiting galleries page
-    Given I can see navbar link to galleries
+    Given I see navbar link to galleries
     When I click galleries link
     Then I should see available galleries
     
