@@ -46,5 +46,13 @@ gem 'ruby_parser' #needed for haml
 gem "authlogic", "~> 3.2.0"
 gem "ckeditor"	   
 
-gem "factory_girl_rails", "~> 4.0"
-gem "shoulda"
+group :development, :test do
+  gem 'thin'
+  gem 'spinach-rails'
+  gem "rspec-rails"
+end
+
+group :test do
+  gem 'spinach'
+  # gem 'rspec'
+end
