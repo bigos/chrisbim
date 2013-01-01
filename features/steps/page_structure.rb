@@ -6,15 +6,16 @@ class Spinach::Features::PageStructure < Spinach::FeatureSteps
 
   step 'it should contain required links' do
     #pending 'step not implemented'
-    links = page.all(:xpath, '//div[@id="navbar"]/a')
-    puts 'links found in navbar:'
-    links.each do |l|
-      puts 'Link to '+ l.text
+    found_links = page.all(:xpath, '//div[@id="navbar"]/a')
+    #puts 'links found in navbar:'
+    links=[]
+    found_links.each do |l|
+      #puts 'Link to '+ l.text
+      links << l.text
       #p l.value
       #p l[:title]
     end
-    puts '###########'
-    puts page.first(:xpath, '//div[@id="navbar"]/a').inspect
-    
+    #puts '###########' + links.inspect
+    links.should include( 'HOME', 'NEWS', 'ABOUT ME', 'GALLERY', 'WORKSHOPS', 'COMMENTS', 'LINKS', 'CONTACT')     
   end
 end
