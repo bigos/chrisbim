@@ -5,7 +5,10 @@ class Spinach::Features::PageStructure < Spinach::FeatureSteps
   end
 
   step 'it should contain required links' do
-    #pending 'step not implemented'
+    #tip on easy finding xpath:
+    #in FF incpect the element with Firebug
+    #hover your mouse over the element in the source
+    #or right click on the element in the DOM path above the souce window
     found_links = page.all(:xpath, '//div[@id="navbar"]/a')
     #puts 'links found in navbar:'
     links=[]
