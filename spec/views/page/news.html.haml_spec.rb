@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe "page/news.html.haml" do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "shows news content" do
+    render
+    rendered.should match /.*<h1>NEWS.*/
+  end
 end
