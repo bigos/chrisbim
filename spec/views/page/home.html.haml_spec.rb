@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe "page/home.html.haml" do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "shows home page content" do
+    render
+    rendered.should match /.*HOME.*/
+  end
 end
