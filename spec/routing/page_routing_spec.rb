@@ -4,6 +4,7 @@ describe PageController do
   describe "routing" do
 
     it "routes to #home" do
+      get("/").should route_to("page#home")
       get("/home").should route_to("page#home")
     end
     it "routes to other pages" do
