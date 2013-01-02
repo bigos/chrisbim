@@ -1,5 +1,21 @@
 Chrisbim::Application.routes.draw do
 
+  match 'home' => "page#home"
+
+  match 'news' => "page#news"
+
+  match 'about_me' => "page#about_me"
+
+  match 'gallery' => "page#gallery"
+
+  match 'workshops' => "page#workshops"
+
+  match 'comments' => "page#comments"
+
+  match 'links' => "page#links"
+
+  match 'contact' => "page#contact"
+
   mount Ckeditor::Engine => '/ckeditor'
   resources :pages
 
