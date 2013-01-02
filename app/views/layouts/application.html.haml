@@ -18,8 +18,11 @@
           
         #content
           = yield
+          %hr
+          %p This is only a sample to test if Hostmonster works with Rails 3
+          %hr
         #footer
-          &copy; Chris Beard Photography 2011 
+          &copy; Chris Beard Photography 2011
     #dump
       %p= current_user.inspect      
       %p= current_user_session.inspect
