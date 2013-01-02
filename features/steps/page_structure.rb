@@ -1,5 +1,4 @@
 class Spinach::Features::PageStructure < Spinach::FeatureSteps
-require 'rspec/helper'
   step 'there is navbar' do
     visit root_path
     n = page.find('#navbar')
