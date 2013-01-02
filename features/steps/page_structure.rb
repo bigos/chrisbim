@@ -19,7 +19,8 @@ class Spinach::Features::PageStructure < Spinach::FeatureSteps
     @links=['home', 'news', 'about_me', 'gallery', 'workshops', 'comments', 'links', 'contact']
     @links.each do |link|
       visit "http://localhost:3000/#{link}"
-      page.body.should include('<h1>'+link.upcase.gsub('_',' '))
+      title=link.upcase.gsub('_',' ')
+      page.body.should include('<h1>'+title)
     end
     #pending 'step not implemented'
   end
