@@ -20,7 +20,7 @@ class Spinach::Features::PageStructure < Spinach::FeatureSteps
     @links.each do |link|
       visit "http://localhost:3000/#{link}"
       title=link.upcase.gsub('_',' ')
-      page.body.should include('<h1>'+title)
+      page.body.should include(title+'</a>')
     end
     #pending 'step not implemented'
   end
