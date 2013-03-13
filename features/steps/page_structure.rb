@@ -12,11 +12,11 @@ class Spinach::Features::PageStructure < Spinach::FeatureSteps
     found_links = page.all(:xpath, '//div[@id="navbar"]/a')
     links=[]
     found_links.each do |l| links << l.text end
-    links.should include( 'HOME', 'NEWS', 'ABOUT ME', 'GALLERY', 'WORKSHOPS', 'COMMENTS', 'LINKS', 'CONTACT')     
+    links.should include( 'HOME', 'NEWS', 'ABOUT ME', 'GALLERY', 'WORKSHOPS', 'BLOG', 'LINKS', 'CONTACT')     
   end
   
   step 'there are links' do
-    @links=['home', 'news', 'about_me', 'gallery', 'workshops', 'comments', 'links', 'contact']
+    @links=['home', 'news', 'about_me', 'gallery', 'workshops', 'blog', 'links', 'contact']
     @links.each do |link|
       visit "http://localhost:3000/#{link}"
       @links.each do |l|

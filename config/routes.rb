@@ -10,7 +10,7 @@ Chrisbim::Application.routes.draw do
 
   match 'workshops' => "page#workshops"
 
-  match 'comments' => "page#comments"
+  match 'blog' => "page#blog"
 
   match 'links' => "page#links"
 

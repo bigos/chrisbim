@@ -14,7 +14,7 @@ class PageController < ApplicationController
   def workshops
   end
 
-  def comments
+  def blog
   end
 
   def links
